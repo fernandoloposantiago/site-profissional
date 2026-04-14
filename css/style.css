@@ -1,0 +1,121 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+
+}
+
+/* Fundo da página */
+body {
+    background-color: #1f2933;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Caixa central */
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    width: 320px;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Título */
+.container h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #111827;
+    font-size: 22px;
+}
+
+
+/* Formulário */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Campos de texto */
+input:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+}
+input {
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: all 0.2s ease;
+}
+
+/* Botão */
+button {
+    padding: 12px;
+    font-size: 15px;
+    font-weight: 600;
+    background: linear-gradient(135deg, #2563eb, #1e40af);
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 15px rgba(37, 99, 235, 0.4);
+}
+
+button {
+    padding: 12px;
+    font-size: 15px;
+    font-weight: 600;
+    background: linear-gradient(135deg, #2563eb, #1e40af);
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 15px rgba(37, 99, 235, 0.4);
+}
+
+/* =========================
+   DASHBOARD
+========================= */
+
+.dashboard {
+    text-align: center;
+}
+
+.bem-vindo {
+    margin: 20px 0 30px;
+    font-size: 16px;
+    color: #374151;
+}
+
+.acoes {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-sair {
+    background: linear-gradient(135deg, #ef4444, #b91c1c);
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 6px;
+}
+
+.btn-sair:hover {
+    box-shadow: 0 6px 15px rgba(239, 68, 68, 0.4);
+}

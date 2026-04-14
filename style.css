@@ -1,0 +1,248 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:rgb(224, 218, 218);
+color:rgb(228, 152, 11);
+}
+
+/* NAV */
+nav{
+position:fixed;
+top:0;
+width:100%;
+display:flex;
+justify-content:space-between;
+padding:15px 40px;
+background:rgba(8, 4, 4, 0.6);
+backdrop-filter:blur(10px);
+z-index:1000;
+}
+
+nav a{
+color:white;
+margin-left:20px;
+text-decoration:none;
+}
+
+/* HERO */
+.hero{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+
+background: 
+linear-gradient(to top, rgba(11, 17, 44, 0.4), transparent),
+url("https://images.unsplash.com/photo-1498050108023-c5249f4df085");
+background-size:cover;
+background-position:center;
+}
+
+.hero h1{
+font-size:4rem;
+}
+
+.hero p{
+margin-top:10px;
+font-size:1.2rem;
+max-width:600px;
+}
+
+button{
+margin-top:20px;
+padding:15px 30px;
+border:none;
+border-radius:10px;
+background:#6366f1;
+color:white;
+cursor:pointer;
+}
+
+/* SEÇÕES */
+section{
+padding:120px 20px;
+text-align:center;
+}
+
+h2{
+font-size:2.5rem;
+margin-bottom:20px;
+}
+
+/* CARDS */
+.cards{
+display:flex;
+flex-wrap:wrap;
+gap:20px;
+justify-content:center;
+}
+
+.card{
+background:#1e293b;
+padding:20px;
+border-radius:12px;
+width:260px;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-10px) scale(1.03);
+}
+
+/* IMAGENS */
+.card img{
+width:100%;
+border-radius:10px;
+margin-bottom:10px;
+}
+
+/* WHATS */
+.whats{
+display:inline-block;
+margin-top:20px;
+padding:15px 30px;
+background:#0f582a;
+border-radius:10px;
+color:rgb(73, 37, 37);
+text-decoration:none;
+}
+
+/* FOOTER */
+footer{
+padding:30px;
+background:#2c2525;
+}
+.contato-box{
+  display:flex;
+  flex-wrap:wrap;
+  gap:20px;
+  justify-content:center;
+  margin-top:20px;
+}
+
+.btn-contato{
+  padding:15px 25px;
+  border-radius:10px;
+  text-decoration:none;
+  color:white;
+  background:#1e293b;
+  transition:0.3s;
+}
+
+.btn-contato:hover{
+  background:#2f62b6;
+  transform:scale(1.05);
+}
+/* BOTÃO PADRÃO */
+.btn-contato{
+  padding:15px 25px;
+  border-radius:10px;
+  text-decoration:none;
+  color:white;
+  background:#2f62b6;
+  transition:0.3s;
+}
+
+/* WHATSAPP VERDE */
+.btn-contato{
+  position:relative;
+  padding:15px 25px;
+  border-radius:10px;
+  text-decoration:none;
+  color:white;
+  background:#1e293b;
+  overflow:hidden;
+  transition:0.3s;
+}
+
+/* MARCA D'ÁGUA BASE */
+.btn-contato::before{
+  content:"";
+  position:absolute;
+  right:10px;
+  top:50%;
+  transform:translateY(-50%);
+  width:40px;
+  height:40px;
+  opacity:0.08;
+  background-size:contain;
+  background-repeat:no-repeat;
+}
+
+/* WHATSAPP */
+.whatsapp{
+  background:#25D366;
+}
+
+.whatsapp::before{
+  background-image:url("https://img.icons8.com/ios-filled/100/ffffff/whatsapp.png");
+}
+
+/* EMAIL */
+.email::before{
+  background-image:url("https://img.icons8.com/ios-filled/100/ffffff/email.png");
+}
+
+/* TELEFONE */
+.telefone::before{
+  background-image:url("https://img.icons8.com/ios-filled/100/ffffff/phone.png");
+}
+/* RESPONSIVO MOBILE */
+@media (max-width: 768px){
+
+  body{
+    padding:10px;
+  }
+
+  h1{
+    font-size:1.8rem;
+  }
+
+  h2{
+    font-size:1.5rem;
+  }
+
+  p{
+    font-size:0.95rem;
+  }
+
+  /* NAVBAR */
+  nav{
+    flex-direction:column;
+    gap:10px;
+  }
+
+  /* HERO */
+  .hero{
+    padding:40px 10px;
+    text-align:center;
+  }
+
+  /* CARDS */
+  .cards{
+    flex-direction:column;
+    gap:20px;
+  }
+
+  .card{
+    width:100%;
+  }
+
+  /* CONTATO */
+  .contato-box{
+    flex-direction:column;
+    gap:15px;
+  }
+
+  .btn-contato{
+    width:100%;
+    text-align:center;
+  }
+
+}
